@@ -1,0 +1,33 @@
+### List
+GET http://127.0.0.1:8000/api/posts
+Accept: application/json
+
+### Store
+POST http://127.0.0.1:8000/api/posts
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Good Morning",
+  "description": "Good Morning",
+  "image": "123456-jpg"
+}
+
+### Show
+GET http://127.0.0.1:8000/api/posts/1
+Accept: application/json
+
+### Update
+PUT http://127.0.0.1:8000/api/posts/8
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Good Morning",
+  "description": "Good Morning",
+  "image": "123456-jpg"
+}
+
+### Delete
+DELETE  http://127.0.0.1:8000/api/posts/4
+Accept: application/json
